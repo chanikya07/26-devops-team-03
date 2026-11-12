@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | TechSpark 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav aria-label="Main">
+      <a class="logo" href="index.html">Tech<span>Spark</span> 2026</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Contact us</h1>
+    <p style="margin-top:1rem">Questions or want to register? Send us a message and we will reply within two days.</p>
+    <div class="two">
+      <form id="contactForm">
+        <label>Name <input type="text" name="name" required></label>
+        <label>Email <input type="email" name="email" required></label>
+        <label>Message <textarea name="message" required></textarea></label>
+        <button class="btn" type="submit">Send message</button>
+        <p id="msg" role="status"></p>
+      </form>
+      <div>
+        <h2>Reach us</h2>
+        <p><strong>Email:</strong> <a href="mailto:techspark@example.com">techspark@example.com</a></p>
+        <p><strong>Phone:</strong> +91 98765 43210</p>
+        <p><strong>Address:</strong> Department of Computer Science, College Campus, Hyderabad, Telangana</p>
+      </div>
+    </div>
+    <script>
+      document.getElementById('contactForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        document.getElementById('msg').textContent = 'Thanks! Your message has been sent.';
+        this.reset();
+      });
+    </script>
+  </main>
+  <footer>&copy; 2026 TechSpark, Department of Computer Science. All rights reserved.</footer>
+</body>
+</html>
