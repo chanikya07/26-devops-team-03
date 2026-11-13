@@ -17,4 +17,4 @@ jobs:
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_DEVOPS_TEAM_03 }}
-          projectId: devops-team-03
+          projectId: External-Exam
